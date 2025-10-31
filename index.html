@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ditjen Pemasyarakatan | Kanal Media Resmi</title>
+  <style>
+    :root {
+      --primary: #07213d;
+      --white: #ffffff;
+      --light-gray: #f5f5f5;
+      --border: #e0e0e0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fafafa;
+      color: var(--primary);
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 500px;
+      margin: 20px auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      background: var(--white);
+    }
+
+    .header {
+      text-align: center;
+      padding: 30px 20px;
+      background: var(--primary);
+      color: var(--white);
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+
+    .header h1 {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .header p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      color: var(--white);
+      font-size: 1.4rem;
+      transition: transform 0.2s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      margin: 30px 0 15px 20px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .link-list {
+      list-style: none;
+      padding: 0 20px;
+    }
+
+    .link-item {
+      display: flex;
+      align-items: center;
+      background: var(--light-gray);
+      margin: 8px 0;
+      padding: 15px 20px;
+      border-radius: 10px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--primary);
+      border: 1px solid var(--border);
+    }
+
+    .link-item:hover {
+      background: #eef2f7;
+      transform: translateX(4px);
+      border-color: var(--primary);
+    }
+
+    .link-icon {
+      margin-right: 12px;
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+
+    .cta-button {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 12px 25px;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s;
+      text-align: center;
+    }
+
+    .cta-button:hover {
+      background: #05172c;
+      transform: translateY(-2px);
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      margin-top: 30px;
+      padding: 15px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      body {
+        margin: 10px;
+        padding: 15px;
+      }
+      .header {
+        padding: 20px 15px;
+      }
+      .logo {
+        width: 100px;
+      }
+      .link-item {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="header">
+    <img src="https://via.placeholder.com/120x120?text=LOGO+DITJENPAS" alt="Logo Ditjen Pemasyarakatan" class="logo" />
+    <h1>Ditjen Pemasyarakatan</h1>
+    <p>Kanal Media Resmi Direktorat Jenderal Pemasyarakatan</p>
+    <div class="social-icons">
+      <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:info@ditjenpas.go.id" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://twitter.com/ditjenpas" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://facebook.com/ditjenpas" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/ditjenpas" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com/@ditjenpas" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://youtube.com/c/PASTV" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <div class="section-title">Media & Informasi</div>
+  <ul class="link-list">
+    <li><a href="https://youtube.com/c/PASTV" class="link-item">
+      <span class="link-icon"><i class="fab fa-youtube"></i></span> YouTube PAS TV
+    </a></li>
+    <li><a href="https://youtube.com/watch?v=example" class="link-item">
+      <span class="link-icon"><i class="fas fa-building"></i></span> Video Office Tour Ditjen Pemasyarakatan
+    </a></li>
+    <li><a href="https://www.ditjenpas.go.id" class="link-item">
+      <span class="link-icon"><i class="fas fa-globe"></i></span> Website Resmi
+    </a></li>
+  </ul>
+
+  <div class="section-title">Layanan Publik</div>
+  <ul class="link-list">
+    <li><a href="https://wa.me/6281234567890" class="link-item">
+      <span class="link-icon"><i class="fas fa-comments"></i></span> Layanan Informasi (WhatsApp)
+    </a></li>
+    <li><a href="https://wa.me/6281234567890" class="link-item">
+      <span class="link-icon"><i class="fas fa-headset"></i></span> Layanan Pengaduan (WhatsApp)
+    </a></li>
+    <li><a href="mailto:berita@ditjenpas.go.id" class="link-item">
+      <span class="link-icon"><i class="fas fa-newspaper"></i></span> Kirim Berita untuk Apa Kabar Pemasyarakatan
+    </a></li>
+    <li><a href="mailto:webmaster@ditjenpas.go.id" class="link-item">
+      <span class="link-icon"><i class="fas fa-envelope-open-text"></i></span> Kirim Berita untuk laman ditjenpas.go.id
+    </a></li>
+    <li><a href="mailto:foto@ditjenpas.go.id?subject=%23LensaPAS" class="link-item">
+      <span class="link-icon"><i class="fas fa-camera"></i></span> Kirim Foto untuk #LensaPAS
+    </a></li>
+    <li><a href="https://goo.gl/maps/example" class="link-item">
+      <span class="link-icon"><i class="fas fa-map-marker-alt"></i></span> Menuju Kantor Kami
+    </a></li>
+  </ul>
+
+  <a href="https://linktr.ee/ditjenpas" class="cta-button">Join ditjenpas on Linktree</a>
+
+  <div class="footer">
+    <p>© 2025 Direktorat Jenderal Pemasyarakatan | <a href="#">Kebijakan Privasi</a> • <a href="#">Cookie Preferences</a> • <a href="#">Report</a></p>
+  </div>
+</body>
+</html>
